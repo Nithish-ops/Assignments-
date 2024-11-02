@@ -1,0 +1,127 @@
+/* General Colors */
+:root {
+    --background-dark: #2c2f33;
+    /* Discord dark background */
+    --primary-blue: #7289da;
+    /* Discord blue */
+    --text-light: #ffffff;
+    /* Light text color */
+    --text-muted: #b9bbbe;
+    /* Muted text color */
+    --card-bg: #23272a;
+    /* Darker background for cards */
+    --hover-blue: #5b7cdb;
+    /* Lighter blue for hover effects */
+}
+
+/* Body and General Styling */
+body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--background-dark);
+    border-bottom: 1px solid var(--text-muted);
+}
+
+.navbar .navbar-brand,
+.navbar-nav .nav-link {
+    color: var(--primary-blue) !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-blue) !important;
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--primary-blue);
+    color: var(--background-dark);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero h1,
+#hero p {
+    color: var(--text-light);
+}
+
+/* Card Section */
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-light);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .card-title {
+    color: var(--primary-blue);
+}
+
+.card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-blue);
+}
+
+/* Contact Modal */
+.modal-content {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-title {
+    color: var(--primary-blue);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-blue);
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
